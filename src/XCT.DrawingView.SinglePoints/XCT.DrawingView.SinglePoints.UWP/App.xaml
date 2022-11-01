@@ -1,0 +1,7 @@
+﻿<Application
+    x:Class="XCT.DrawingView.SinglePoints.UWP.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:XCT.DrawingView.SinglePoints.UWP">
+
+</Application>

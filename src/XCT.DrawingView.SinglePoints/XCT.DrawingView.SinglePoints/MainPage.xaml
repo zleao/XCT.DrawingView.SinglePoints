@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             xmlns:ctl="clr-namespace:XCT.DrawingView.SinglePoints.Controls"
+             x:Class="XCT.DrawingView.SinglePoints.MainPage">
+
+    <Grid RowDefinitions="Auto,*" ColumnDefinitions="*,*">
+
+        <Label Grid.Row="0" Grid.Column="0"
+               Text="Original DrawingView"
+               HorizontalOptions="Center"
+               FontAttributes="Bold"
+               FontSize="16"/>
+        <xct:DrawingView Grid.Row="1" Grid.Column="0" 
+                         DefaultLineColor="{Binding LineColor}"
+                         BackgroundColor="{Binding BackgroundColor}"
+                         MultiLineMode="True"
+                         DefaultLineWidth="{Binding LineWidth}"
+                         Lines="{Binding Lines}"/>
+
+        <Label Grid.Row="0" Grid.Column="1"
+               Text="My DrawingView"
+               HorizontalOptions="Center"
+               FontAttributes="Bold"
+               FontSize="16"/>
+        <ctl:MyDrawingView Grid.Row="1" Grid.Column="1" 
+                           DefaultLineColor="{Binding LineColor}"
+                           BackgroundColor="{Binding BackgroundColor}"
+                           MultiLineMode="True"
+                           DefaultLineWidth="{Binding LineWidth}"
+                           Lines="{Binding Lines}"/>
+
+    </Grid>
+
+</ContentPage>
